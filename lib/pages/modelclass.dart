@@ -28,7 +28,7 @@ class Memberlist {
   String? popularity;
   String? like;
   String? followers;
-  String? rank;
+  String? ranking;
 
   Memberlist(
       {this.image,
@@ -37,7 +37,7 @@ class Memberlist {
         this.popularity,
         this.like,
         this.followers,
-        this.rank});
+        this.ranking});
 
   Memberlist.fromJson(Map<String, dynamic> json) {
     image = json['image'];
@@ -46,7 +46,7 @@ class Memberlist {
     popularity = json['popularity'];
     like = json['like'];
     followers = json['followers'];
-    rank = json['rank'];
+    ranking = json['ranking'];
   }
 
   Map<String, dynamic> toJson() {
@@ -57,7 +57,7 @@ class Memberlist {
     data['popularity'] = this.popularity;
     data['like'] = this.like;
     data['followers'] = this.followers;
-    data['rank'] = this.rank;
+    data['ranking'] = this.ranking;
     return data;
   }
 }
